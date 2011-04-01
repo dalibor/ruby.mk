@@ -2,14 +2,12 @@
   .logo
     %h1
       = link_to root_path do
-        %strong Dalibor
-        Nasevic
+        MKRUG - ruby.mk
+        
     %p
-      Software principles and practices to extreme levels
+      Macedonian Ruby Users Group
   %nav
     %ul
       %li= link_to image_tag('feed-icon-14x14.png'), posts_path(:format => 'rss')
       %li= link_to "Home", root_path
       %li= link_to "Blog", posts_path
-      %li= link_to "About", static_path('about')
-      %li= mail_to 'dalibor.nasevic@gmail.com', 'Contact'

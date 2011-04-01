@@ -37,3 +37,19 @@ Feature: A visitor can view posts
     Then I should see "Cucumber"
     And I should see "Webrat"
     And I should not see "Vim"
+
+  Scenario: Visitor can filter posts by editor
+    Given a editor "editor1" exists with name: "Editor1"
+    And a editor "editor2" exists with name: "Editor2"
+    And a post exists with title: "Post from Editor 1", editor: editor "editor1"
+    And a post exists with title: "Post from Editor 2", editor: editor "editor2"
+    And I am on list of posts
+    Then I should see "Editors"
+    And I should see "Editor1"
+    And I should see "Editor2"
+    And I should see "Post from Editor 1"
+    And I should see "Post from Editor 2"
+    When I follow "Editor1"
+    Then I should see "Displaying posts from Editor1"
+    And I should see "Post from Editor 1"
+    And I should not see "Post from Editor 2"

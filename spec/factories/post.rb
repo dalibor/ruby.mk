@@ -4,4 +4,5 @@ Factory.define :post, :class => Post do |f|
   f.publish       true
   f.tag_names     nil
   f.published_at  Time.now
+  f.association   :editor
 end

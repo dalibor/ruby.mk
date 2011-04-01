@@ -4,7 +4,10 @@
 
 .wrapper
   = render 'posts/post', :post => @post
-  = render 'shared/archive'
+
+  .aside
+    = render 'shared/archive'
+    = render 'shared/editors'
 
 .comments
   %a{:name => "comments"}

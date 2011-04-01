@@ -1,12 +1,10 @@
-- title "Software principles and practices to extreme levels"
+- title "Home"
 
-= render 'shared/profile'
-
-%section.right
+%section.left
   %section.posts_excerpt
     %header
       %h3 Recent posts
-      = link_to "All posts", posts_path
+      = link_to "View all", posts_path
     - @posts.each do |post|
       %article
         %h4= link_to post.title, post
@@ -16,9 +14,19 @@
           = time_ago_in_words post.published_at
           ago
 
-  %section.all_tags
+%section.right
+  %section.about
+    %p
+      Welcome to Macedonian Ruby User Group (MKRUG) - a community of Ruby developers in Macedonia.
+    %p
+      We meet up at least once a month at #{link_to "Hacklab KIKA", 'http://maps.google.com/maps/ms?ie=UTF8&t=h&hl=en&msa=0&msid=104178503477507895129.00045caee6af59dfd8517&ll=41.988416,21.431478&spn=0.002245,0.003449&z=18', :target => '_blank'} in Skopje - usually every 2nd Thursday.
+    %p
+      == For next meeting & news #{link_to 'read our blog', posts_path}, for discussions #{link_to 'join our mailing list', 'http://groups.google.com/group/mk-ruby-users-group/', :target => '_blank'}.
+
+
+
+  %section.updates.twitter
     %header
-      %h3 Tags
-    .content
-      - tag_cloud Tag.tag_counts, %w(t1 t2 t3 t4 t5) do |name, css_class|
-        = link_to name, tag_posts_path(name), :class => css_class, :rel => 'tag'
+      %h3 News from Twitter
+      = link_to "@mk_rug", "http://twitter.com/mk_rug", :target => "_blank"
+    #tweets_container

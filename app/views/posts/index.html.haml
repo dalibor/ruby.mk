@@ -1,9 +1,20 @@
 - title("Recent blog posts")
 
+- if @editor.present?
+  .posts_filter
+    Displaying posts from
+    %strong= @editor.name
+- elsif @tag.present?
+  .posts_filter
+    Displaying posts with tag
+    %strong= @tag.name
+
 .posts
   = render :partial => 'post', :collection => @posts
 
   .pagination
     = will_paginate @posts
 
-= render 'shared/archive'
+.aside
+  = render 'shared/archive'
+  = render 'shared/editors'

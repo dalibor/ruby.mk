@@ -55,7 +55,7 @@ describe Editor do
   describe "authenticate" do
     it "should authenticate given valid email and password" do
       editor = Factory.create(:editor)
-      Editor.authenticate('pink.panter@gmail.com', 'password').should == editor
+      Editor.authenticate(editor.email, editor.password).should == editor
     end
 
     it "should not authenticate given invalid password" do

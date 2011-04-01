@@ -2,7 +2,7 @@ xml.instruct!
 xml.urlset "xmlns" => "http://www.sitemaps.org/schemas/sitemap/0.9" do
  
   xml.url do
-    xml.loc "http://dalibornasevic.com"
+    xml.loc "http://ruby.mk"
     xml.priority 1.0
   end
  

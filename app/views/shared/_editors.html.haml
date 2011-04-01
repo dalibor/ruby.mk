@@ -1,0 +1,6 @@
+%aside.editors
+  %h3 Editors
+  %ul
+    - @editors.each do |editor|
+      %li
+        = link_to editor.name, editor_posts_path(editor.id)

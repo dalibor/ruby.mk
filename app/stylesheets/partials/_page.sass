@@ -79,7 +79,6 @@ blockquote
   padding: 10px
 
 body
-  background-color: #F2F2F2
   font-size: 13px
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
 
@@ -91,12 +90,12 @@ body
 
 .left
   float: left
-  width: 420px
+  width: 520px
 
 .right
   float: right
   margin-left: 40px
-  width: 440px
+  width: 340px
 
 .wrapper
   width: 900px
@@ -129,7 +128,7 @@ body
     float: right
 
     ul
-      +horizontal-list
+      +horizontal-list(6px)
 /* FOOTER END */
 
 /* LOGO BEGIN */
@@ -138,9 +137,7 @@ body
   h1
     margin-bottom: 0
     a
-      text-transform: uppercase
       font-size: 25px
-      color: $olive
       letter-spacing: -0.03em
 
       &:hover
@@ -155,9 +152,8 @@ body
 
 section
   header
-    background: $green
-    +border-top-left-radius(5px)
-    +border-bottom-left-radius(5px)
+    background: $light-gray
+    +border-radius(5px)
     padding: 5px 10px
     overflow: hidden
     h3
@@ -168,32 +164,16 @@ section
       float: right
 
 .about
-  background: $green
+  background: #E9E9CC
   padding: 10px
   overflow: hidden
   +border-radius(10px)
-  +box-shadow(#666, 0, 2px, 2px)
+  +box-shadow(#999, 2px, 3px, 3px, -2px)
 
   div
     overflow: hidden
     margin-bottom: 5px
     position: relative
-
-    h2
-      margin-left: 90px
-      font-size: 1.3em
-      letter-spacing: -0.03em
-      //text-align: justify
-      strong
-        text-transform: UPPERCASE
-
-    img
-      position: absolute
-      top: 0
-      bottom: 0
-      margin: auto 5px
-      float: left
-      +rotate(-5deg)
 
   p
     padding: 5px
@@ -250,28 +230,11 @@ section
       font-weight: bold
       font-style: italic
 
-.highlights
-  width: 420px
-  margin-left: 40px
-  padding: 20px 10px
-  float: right
-  background: #DDD
-  +border-radius(10px)
-
-  h2
-    margin: 0 0 15px 10px
-
-  ul
-    li
-      list-style: circle outside none
-      margin: 5px 0 15px
-
 .posts
   width: 650px
   float: left
   margin-right: 20px
   overflow: hidden
-
 
 article.post
   width: 650px
@@ -287,32 +250,51 @@ article.post
     margin-bottom: 1em
 
   header
-    background: #DDD
+    background: $light-gray
     +border-radius(10px)
     +box-shadow(#999, 1px, 2px, 3px)
     margin-bottom: 15px
     padding: 5px 15px
-    h2
-      font-size: 24px
-    div
-      margin-top: 2px
-      padding-top: 3px
-      text-transform: uppercase
-      font-size: 11px
-      font-weight: bold
-      color: #888
+    overflow: hidden
 
-      .tags
-        border-left: 2px solid #CCC
-        border-right: 2px solid #CCC
-        margin: 0 10px
-        padding: 0 10px
+    .gravatar
+      float: left
+      width: 50px
+    .meta
+      margin-left: 10px
+      float: left
+      width: 560px
 
-      span
-        word-spacing: 3px
+      h2
+        font-size: 24px
+      div
+        margin-top: 2px
+        padding-top: 3px
+        text-transform: uppercase
+        font-size: 11px
+        font-weight: bold
+        color: #888
+
+        .tags
+          border-left: 2px solid #CCC
+          border-right: 2px solid #CCC
+          margin: 0 10px
+          padding: 0 10px
+
+        span
+          word-spacing: 3px
   section
     border-bottom: 1px solid #CCC
     padding: 10px 5px
+
+.posts_filter
+  margin: 5px 0 20px
+  font-style: italic
+
+.aside
+  float: right
+  width: 205px
+  
 
 aside
   float: right
@@ -323,6 +305,9 @@ aside
   ul
     li
       margin: 3px 0
+
+.editors
+  margin-top: 20px
 
 .comments
   width: 650px
@@ -421,7 +406,6 @@ input[type=submit]
 
 input[type=submit]:hover, input[type=submit]:focus, input[type=submit]:active
   +box-shadow(#666, 1px, 3px)
-
 
 .submit
   margin-left: 100px

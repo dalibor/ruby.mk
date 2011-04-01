@@ -13,8 +13,8 @@ Given /^I am logged in as editor$/ do
 end
 
 Given /^I am logged in as admin$/ do
-  Factory.create(:editor, :is_admin => true)
-  Given 'I am logged in as "pink.panter@gmail.com"'
+  Factory.create(:admin, :email => "admin@example.com")
+  Given 'I am logged in as "admin@example.com"'
 end
 
 Given /^I have posts titled (.+)$/ do |titles|

@@ -25,7 +25,3 @@ Feature: Manage editors
     When I follow "Delete"
     Then I should see "Editor was successfully destroyed"
     And I should not see "New Editor 2"
-
-
-
-

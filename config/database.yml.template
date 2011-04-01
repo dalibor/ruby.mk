@@ -17,7 +17,7 @@
 development:
   adapter: mysql
   encoding: utf8
-  database: blog_development
+  database: ruby_mk_development
   pool: 5
   username: root
   password:
@@ -29,7 +29,7 @@ development:
 test:
   adapter: mysql
   encoding: utf8
-  database: blog_test
+  database: ruby_mk_test
   pool: 5
   username: root
   password:
@@ -38,7 +38,7 @@ test:
 production:
   adapter: mysql
   encoding: utf8
-  database: blog_production
+  database: ruby_mk_production
   pool: 5
   username: root
   password: 

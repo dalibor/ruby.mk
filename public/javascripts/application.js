@@ -1,10 +1,9 @@
 // remap jQuery to $
 (function ($) {
+  $(function () {
+    SyntaxHighlighter.defaults['toolbar'] = false;
+    SyntaxHighlighter.all();
 
-  SyntaxHighlighter.defaults['toolbar'] = false;
-  SyntaxHighlighter.all();
-
-  $('#tweets_container').tweets({username: 'blackflasher', limit: 3});
-  $('#tracks_container').tracks({username: 'blackflasher', limit: 3});
-
+    $('#tweets_container').tweets({username: 'mk_rug', limit: 3});
+  })
 })(this.jQuery);
