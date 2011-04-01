@@ -1,17 +1,18 @@
-= blog
+= ruby.mk
 
-* http://github.com/dalibor/blog
+* http://github.com/dalibor/ruby.mk
 
 == DESCRIPTION:
 
-Ruby on Rails 3 Blog application deployed at http://dalibornasevic.com
+- Ruby on Rails 3 Team Blog application deployed at MKRUG website - http://ruby.mk
+- Started as a project copy of https://github.com/dalibor/blog at bca8ba15b7581a90f751
 
 == INSTALL:
 
 - Clone repository
 
-    git clone git://github.com/dalibor/blog.git
-    cd blog
+    git clone http://github.com/dalibor/ruby.mk
+    cd ruby.mk
 
 - Config database
 
@@ -86,3 +87,4 @@ IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
 CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
