@@ -79,7 +79,8 @@ describe Post do
 
   describe "to_param" do
     it "should have nice url format using to_param method" do
-      post = Factory.build(:post, :id => 1)
+      post = Factory.build(:post, :id => 1, 
+                           :title => "My first blog post")
       post.to_param.should == "1-my-first-blog-post"
     end
   end
