@@ -15,8 +15,6 @@ class PostsController < ApplicationController
 
   def show
     @post           = Post.where('published_at IS NOT NULL').find(params[:id])
-    @comments       = @post.comments.where({:approved => true})
-    @comment        = Comment.new
     @posts_by_month = Post.posts_by_month
     @editors        = Editor.all
   end
@@ -28,7 +26,7 @@ class PostsController < ApplicationController
       elsif params[:editor].present? && (@editor = Editor.find(params[:editor]))
         @editor.posts
       elsif params[:year].present? && params[:month].present?
-        Post.where("YEAR(published_at) = ? AND MONTH(published_at) = ?", 
+        Post.where("YEAR(published_at) = ? AND MONTH(published_at) = ?",
                    params[:year], params[:month])
       else
         Post

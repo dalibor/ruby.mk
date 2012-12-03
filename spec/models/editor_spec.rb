@@ -68,20 +68,4 @@ describe Editor do
       Editor.authenticate('pink.panter@gmail.com1', 'password').should == nil
     end
   end
-
 end
-
-# == Schema Information
-#
-# Table name: editors
-#
-#  id            :integer(4)      not null, primary key
-#  email         :string(255)
-#  name          :string(255)
-#  password_hash :string(255)
-#  password_salt :string(255)
-#  is_admin      :boolean(1)      default(FALSE)
-#  created_at    :datetime
-#  updated_at    :datetime
-#
-

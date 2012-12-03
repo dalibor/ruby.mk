@@ -10,23 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110320230140) do
-
-  create_table "comments", :force => true do |t|
-    t.integer  "post_id"
-    t.string   "name"
-    t.string   "email"
-    t.string   "url"
-    t.text     "content"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "user_ip"
-    t.string   "user_agent"
-    t.string   "referrer"
-    t.boolean  "approved",   :default => true, :null => false
-  end
-
-  add_index "comments", ["post_id"], :name => "index_comments_on_post_id"
+ActiveRecord::Schema.define(:version => 20121203220107) do
 
   create_table "editors", :force => true do |t|
     t.string   "name"
@@ -43,12 +27,10 @@ ActiveRecord::Schema.define(:version => 20110320230140) do
     t.text     "content"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "comments_count",  :default => 0
     t.datetime "published_at"
     t.string   "description"
-    t.boolean  "comments_closed", :default => false
     t.integer  "editor_id"
-    t.boolean  "publish",         :default => false
+    t.boolean  "publish",      :default => false
   end
 
   create_table "taggings", :force => true do |t|

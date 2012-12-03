@@ -1,7 +1,7 @@
 class Post < ActiveRecord::Base
 
   # Attributes
-  attr_accessible :title, :content, :description, :comments_closed,
+  attr_accessible :title, :content, :description,
                   :tag_names, :publish, :published_at
   attr_writer :tag_names
 
@@ -10,7 +10,6 @@ class Post < ActiveRecord::Base
   validates :content, :presence => true
 
   # Associations
-  has_many :comments
   has_many :taggings, :dependent => :destroy
   has_many :tags, :through => :taggings
   belongs_to :editor
@@ -38,34 +37,15 @@ class Post < ActiveRecord::Base
   end
 
   private
-
-    def assign_tags
-      if tag_names
-        self.tags = tag_names.split(/\s+/).map do |name|
-          Tag.find_or_create_by_name(name.strip)
-        end
+  def assign_tags
+    if tag_names
+      self.tags = tag_names.split(/\s+/).map do |name|
+        Tag.find_or_create_by_name(name.strip)
       end
     end
+  end
 
-    def reset_published_at
-      self.published_at = nil
-    end
+  def reset_published_at
+    self.published_at = nil
+  end
 end
-
-
-# == Schema Information
-#
-# Table name: posts
-#
-#  id              :integer(4)      not null, primary key
-#  title           :string(255)
-#  content         :text
-#  created_at      :datetime
-#  updated_at      :datetime
-#  comments_count  :integer(4)      default(0)
-#  published_at    :datetime
-#  description     :string(255)
-#  comments_closed :boolean(1)      default(FALSE)
-#  editor_id       :integer(4)
-#
-

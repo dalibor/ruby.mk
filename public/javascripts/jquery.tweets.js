@@ -27,7 +27,7 @@
 
   var Twitter = (
     function () {
-      var twitterUrl = 'http://twitter.com/';
+      var twitterUrl = 'https://api.twitter.com/1/';
 
       var tweets = function (settings, container) {
         var url = twitterUrl + 'statuses/user_timeline/' + settings.username +

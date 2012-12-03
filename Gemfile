@@ -30,19 +30,18 @@ group :development do
 end
 
 group :development, :test do
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 2.8.0'
   gem 'web-app-theme', '>= 0.6.2'
   gem 'ruby_parser' # used by web-app-theme
 end
 
 group :test do
-  gem 'rspec'
   gem 'cucumber'
-  gem 'cucumber-rails'
+  gem 'cucumber-rails', :require => false
   gem 'database_cleaner'
-  gem 'capybara'
+  gem 'capybara', '=1.1.2'
   gem 'pickle'
-  gem 'spork'
+  gem 'spork', '~> 0.9.0.rc'
   gem 'factory_girl_rails'
   gem 'shoulda'
   gem 'email_spec'

@@ -9,12 +9,16 @@ end
 
 Given /^I am logged in as editor$/ do
   Factory.create(:editor, :email => "editor@example.com")
-  Given 'I am logged in as "editor@example.com"'
+  steps %Q{
+    Given I am logged in as "editor@example.com"
+  }
 end
 
 Given /^I am logged in as admin$/ do
   Factory.create(:admin, :email => "admin@example.com")
-  Given 'I am logged in as "admin@example.com"'
+  steps %Q{
+    Given I am logged in as "admin@example.com"
+  }
 end
 
 Given /^I have posts titled (.+)$/ do |titles|
@@ -51,13 +55,3 @@ end
 Then /^the page should not have "([^"]*)"$/ do |selector|
   page.should_not have_css(selector)
 end
-
-#When /^I wait "([^\"]*)" second$/ do |time|
-#  now = Time.now
-#  Time.stub!(:now).and_return(now + time.to_i.seconds)
-
-#  original_value = Comment.minimum_wait_time
-#  Comment.minimum_wait_time = 1
-#  sleep Comment.minimum_wait_time
-#  @after_current_scenario_blocks << lambda{ Comment.minimum_wait_time = original_value }
-#end

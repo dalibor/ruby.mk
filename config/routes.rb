@@ -9,9 +9,7 @@ Blog::Application.routes.draw do
   root :to => 'main#index'
 
   resource :session
-  resources :posts, :only => [:index, :show] do
-    resources :comments, :only => [:create]
-  end
+  resources :posts, :only => [:index, :show]
 
   namespace :admin do
     root :to => 'main#index'
@@ -19,18 +17,6 @@ Blog::Application.routes.draw do
     resources :posts do
       member do
         get :delete
-      end
-    end
-
-    resources :comments do
-      member do
-        get :delete
-        put :approve
-        put :reject
-      end
-
-      collection do
-        delete :destroy_multiple
       end
     end
 
