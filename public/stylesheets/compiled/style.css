@@ -763,132 +763,131 @@ article.post header .meta div {
 /* line 278, ../../../app/stylesheets/partials/_page.sass */
 article.post header .meta div .tags {
   border-left: 2px solid #cccccc;
-  border-right: 2px solid #cccccc;
   margin: 0 10px;
   padding: 0 10px;
 }
-/* line 283, ../../../app/stylesheets/partials/_page.sass */
+/* line 282, ../../../app/stylesheets/partials/_page.sass */
 article.post header .meta div time {
   border-left: 2px solid #cccccc;
   margin-left: 10px;
   padding-left: 10px;
 }
-/* line 288, ../../../app/stylesheets/partials/_page.sass */
+/* line 287, ../../../app/stylesheets/partials/_page.sass */
 article.post header .meta div span {
   word-spacing: 3px;
 }
-/* line 290, ../../../app/stylesheets/partials/_page.sass */
+/* line 289, ../../../app/stylesheets/partials/_page.sass */
 article.post section {
   border-bottom: 1px solid #cccccc;
   padding: 10px 5px;
 }
 
-/* line 294, ../../../app/stylesheets/partials/_page.sass */
+/* line 293, ../../../app/stylesheets/partials/_page.sass */
 .posts_filter {
   margin: 5px 0 20px;
   font-style: italic;
 }
 
-/* line 298, ../../../app/stylesheets/partials/_page.sass */
+/* line 297, ../../../app/stylesheets/partials/_page.sass */
 .aside {
   float: right;
   width: 205px;
 }
 
-/* line 303, ../../../app/stylesheets/partials/_page.sass */
+/* line 302, ../../../app/stylesheets/partials/_page.sass */
 aside {
   float: right;
   width: 205px;
 }
-/* line 307, ../../../app/stylesheets/partials/_page.sass */
+/* line 306, ../../../app/stylesheets/partials/_page.sass */
 aside h3 {
   margin: 0 0 15px 20px;
 }
-/* line 310, ../../../app/stylesheets/partials/_page.sass */
+/* line 309, ../../../app/stylesheets/partials/_page.sass */
 aside ul li {
   margin: 3px 0;
 }
 
-/* line 313, ../../../app/stylesheets/partials/_page.sass */
+/* line 312, ../../../app/stylesheets/partials/_page.sass */
 .editors {
   margin-top: 20px;
 }
 
-/* line 316, ../../../app/stylesheets/partials/_page.sass */
+/* line 315, ../../../app/stylesheets/partials/_page.sass */
 .comments {
   width: 650px;
 }
-/* line 319, ../../../app/stylesheets/partials/_page.sass */
+/* line 318, ../../../app/stylesheets/partials/_page.sass */
 .comments h3 {
   margin-bottom: 20px;
 }
-/* line 322, ../../../app/stylesheets/partials/_page.sass */
+/* line 321, ../../../app/stylesheets/partials/_page.sass */
 .comments ol {
   margin: 0;
 }
-/* line 325, ../../../app/stylesheets/partials/_page.sass */
+/* line 324, ../../../app/stylesheets/partials/_page.sass */
 .comments ol li {
   border-bottom: 1px dashed #cccccc;
   margin: 20px 0 30px;
   padding-bottom: 5px;
   overflow: hidden;
 }
-/* line 331, ../../../app/stylesheets/partials/_page.sass */
+/* line 330, ../../../app/stylesheets/partials/_page.sass */
 .comments ol li .author {
   float: left;
   width: 60px;
 }
-/* line 335, ../../../app/stylesheets/partials/_page.sass */
+/* line 334, ../../../app/stylesheets/partials/_page.sass */
 .comments ol li time {
   margin: 5px 0;
   text-align: right;
   float: right;
   width: 590px;
 }
-/* line 341, ../../../app/stylesheets/partials/_page.sass */
+/* line 340, ../../../app/stylesheets/partials/_page.sass */
 .comments ol li .content {
   float: right;
   width: 580px;
   margin-left: 10px;
 }
 
-/* line 347, ../../../app/stylesheets/partials/_page.sass */
+/* line 346, ../../../app/stylesheets/partials/_page.sass */
 .comment_form h3 {
   margin-bottom: 1em;
 }
 
-/* line 350, ../../../app/stylesheets/partials/_page.sass */
+/* line 349, ../../../app/stylesheets/partials/_page.sass */
 .all_tags {
   margin: 35px 0 0;
 }
-/* line 353, ../../../app/stylesheets/partials/_page.sass */
+/* line 352, ../../../app/stylesheets/partials/_page.sass */
 .all_tags .content {
   margin-top: 5px;
   padding: 5px;
   word-spacing: 4px;
 }
-/* line 358, ../../../app/stylesheets/partials/_page.sass */
+/* line 357, ../../../app/stylesheets/partials/_page.sass */
 .all_tags .t1 {
   font-size: 12px;
 }
-/* line 360, ../../../app/stylesheets/partials/_page.sass */
+/* line 359, ../../../app/stylesheets/partials/_page.sass */
 .all_tags .t2 {
   font-size: 15px;
 }
-/* line 362, ../../../app/stylesheets/partials/_page.sass */
+/* line 361, ../../../app/stylesheets/partials/_page.sass */
 .all_tags .t3 {
   font-size: 18px;
 }
-/* line 364, ../../../app/stylesheets/partials/_page.sass */
+/* line 363, ../../../app/stylesheets/partials/_page.sass */
 .all_tags .t4 {
   font-size: 21px;
 }
-/* line 366, ../../../app/stylesheets/partials/_page.sass */
+/* line 365, ../../../app/stylesheets/partials/_page.sass */
 .all_tags .t5 {
   font-size: 24px;
 }
 
-/* line 369, ../../../app/stylesheets/partials/_page.sass */
+/* line 368, ../../../app/stylesheets/partials/_page.sass */
 label {
   font-weight: bold;
   margin-bottom: 3px;
@@ -897,7 +896,7 @@ label {
   width: 100px;
 }
 
-/* line 376, ../../../app/stylesheets/partials/_page.sass */
+/* line 375, ../../../app/stylesheets/partials/_page.sass */
 span.field_notice {
   display: block;
   padding-left: 100px;
@@ -905,23 +904,23 @@ span.field_notice {
   font-size: 10px;
 }
 
-/* line 382, ../../../app/stylesheets/partials/_page.sass */
+/* line 381, ../../../app/stylesheets/partials/_page.sass */
 .fieldWithErrors {
   padding: 2px;
   background-color: red;
   display: table;
 }
 
-/* line 388, ../../../app/stylesheets/partials/_page.sass */
+/* line 387, ../../../app/stylesheets/partials/_page.sass */
 form div {
   margin: 5px 0 10px;
 }
-/* line 391, ../../../app/stylesheets/partials/_page.sass */
+/* line 390, ../../../app/stylesheets/partials/_page.sass */
 form span.field_with_errors input, form span.field_with_errors textarea {
   border: 1px solid red;
 }
 
-/* line 394, ../../../app/stylesheets/partials/_page.sass */
+/* line 393, ../../../app/stylesheets/partials/_page.sass */
 input, textarea {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -932,7 +931,7 @@ input, textarea {
   border: 1px solid #cccccc;
   padding: 3px;
 }
-/* line 398, ../../../app/stylesheets/partials/_page.sass */
+/* line 397, ../../../app/stylesheets/partials/_page.sass */
 input:hover, input:focus, input:active, textarea:hover, textarea:focus, textarea:active {
   -moz-box-shadow: #cccccc 0 0 5px 0;
   -webkit-box-shadow: #cccccc 0 0 5px 0;
@@ -941,7 +940,7 @@ input:hover, input:focus, input:active, textarea:hover, textarea:focus, textarea
   border: 1px solid #cccccc;
 }
 
-/* line 402, ../../../app/stylesheets/partials/_page.sass */
+/* line 401, ../../../app/stylesheets/partials/_page.sass */
 input[type=submit] {
   cursor: pointer;
   font-size: 12px;
@@ -960,7 +959,7 @@ input[type=submit] {
   box-shadow: #666666 1px 3px 5px 0;
 }
 
-/* line 411, ../../../app/stylesheets/partials/_page.sass */
+/* line 410, ../../../app/stylesheets/partials/_page.sass */
 input[type=submit]:hover, input[type=submit]:focus, input[type=submit]:active {
   -moz-box-shadow: #666666 1px 3px 5px 0;
   -webkit-box-shadow: #666666 1px 3px 5px 0;
@@ -968,18 +967,18 @@ input[type=submit]:hover, input[type=submit]:focus, input[type=submit]:active {
   box-shadow: #666666 1px 3px 5px 0;
 }
 
-/* line 414, ../../../app/stylesheets/partials/_page.sass */
+/* line 413, ../../../app/stylesheets/partials/_page.sass */
 .submit {
   margin-left: 100px;
 }
 
-/* line 417, ../../../app/stylesheets/partials/_page.sass */
+/* line 416, ../../../app/stylesheets/partials/_page.sass */
 .syntaxhighlighter {
   padding: 10px 0;
 }
 
 /* PAGINATION BEGIN */
-/* line 423, ../../../app/stylesheets/partials/_page.sass */
+/* line 422, ../../../app/stylesheets/partials/_page.sass */
 .pagination a, .pagination span, .pagination em {
   padding: 2px 5px;
   margin-right: 5px;
@@ -989,79 +988,79 @@ input[type=submit]:hover, input[type=submit]:focus, input[type=submit]:active {
   border-width: 1px;
 }
 
-/* line 431, ../../../app/stylesheets/partials/_page.sass */
+/* line 430, ../../../app/stylesheets/partials/_page.sass */
 .pagination em {
   font-weight: bold;
 }
 
-/* line 434, ../../../app/stylesheets/partials/_page.sass */
+/* line 433, ../../../app/stylesheets/partials/_page.sass */
 .pagination a {
   text-decoration: none;
 }
 
-/* line 437, ../../../app/stylesheets/partials/_page.sass */
+/* line 436, ../../../app/stylesheets/partials/_page.sass */
 .pagination a, .pagination span {
   -moz-border-radius: 3px;
   border: 1px solid #cccccc;
 }
 
-/* line 441, ../../../app/stylesheets/partials/_page.sass */
+/* line 440, ../../../app/stylesheets/partials/_page.sass */
 .pagination em {
   background: #36393d;
   color: white;
   border: 1px solid #36393d;
 }
 
-/* line 446, ../../../app/stylesheets/partials/_page.sass */
+/* line 445, ../../../app/stylesheets/partials/_page.sass */
 .pagination a {
   color: #1a1a1a;
 }
 
-/* line 449, ../../../app/stylesheets/partials/_page.sass */
+/* line 448, ../../../app/stylesheets/partials/_page.sass */
 .pagination a:hover {
   border: 1px solid #666666;
 }
 
 /* PAGINATION END */
 /* FLASH BEGIN */
-/* line 455, ../../../app/stylesheets/partials/_page.sass */
+/* line 454, ../../../app/stylesheets/partials/_page.sass */
 #error_explanation {
   margin: 20px;
 }
-/* line 458, ../../../app/stylesheets/partials/_page.sass */
+/* line 457, ../../../app/stylesheets/partials/_page.sass */
 #error_explanation p {
   margin: 0 10px 0;
 }
 
-/* line 461, ../../../app/stylesheets/partials/_page.sass */
+/* line 460, ../../../app/stylesheets/partials/_page.sass */
 .notice, .error {
   padding: 2px 10px;
   margin: 10px 0;
   color: white;
 }
-/* line 465, ../../../app/stylesheets/partials/_page.sass */
+/* line 464, ../../../app/stylesheets/partials/_page.sass */
 .notice p, .error p {
   margin: 0;
 }
 
-/* line 468, ../../../app/stylesheets/partials/_page.sass */
+/* line 467, ../../../app/stylesheets/partials/_page.sass */
 .notice {
   background-color: #00cc33;
   border: 3px solid green;
 }
 
-/* line 472, ../../../app/stylesheets/partials/_page.sass */
+/* line 471, ../../../app/stylesheets/partials/_page.sass */
 .error, .recaptcha_error {
   background-color: #cc0000;
   border: 3px solid red;
 }
 
-/* line 476, ../../../app/stylesheets/partials/_page.sass */
+/* line 475, ../../../app/stylesheets/partials/_page.sass */
 #recaptcha_widget_div {
   margin-left: 100px;
 }
 
-/* line 479, ../../../app/stylesheets/partials/_page.sass */
+/* line 478, ../../../app/stylesheets/partials/_page.sass */
 .recaptcha_error {
   display: none;
 }
