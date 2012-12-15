@@ -8,6 +8,7 @@ gem 'will_paginate'
 gem 'bcrypt-ruby', :require => 'bcrypt'
 gem 'inherited_resources'
 gem 'jquery-rails', '=1.0.19'
+gem 'html5-rails'
 
 group :assets do
   gem 'sass-rails'
