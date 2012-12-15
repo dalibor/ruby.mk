@@ -1,13 +1,15 @@
-= ruby.mk
+![Travis status](https://travis-ci.org/mkrug/ruby.mk.png)
+
+# ruby.mk
 
 * http://github.com/dalibor/ruby.mk
 
-== DESCRIPTION:
+## DESCRIPTION:
 
 - Ruby on Rails 3 Team Blog application deployed at MKRUG website - http://ruby.mk
 - Started as a project copy of https://github.com/dalibor/blog at bca8ba15b7581a90f751
 
-== INSTALL:
+## INSTALL:
 
 - Clone repository
 
@@ -47,13 +49,13 @@
 
     ruby script/server
 
-== SEO
+## SEO
 
 - When creating post fill description area for description meta tag of your show post page
 
 - Add tags to the post which are used as keywords on the post page
 
-== Run tests
+## Run tests
 
 - Run cucumber features
 
@@ -63,7 +65,7 @@
 
     rspec spec
 
-== LICENSE:
+## LICENSE:
 
 (The MIT License)
 
