@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 B = {}
 B[:url]         = "ruby.mk"
 B[:title]       = "Macedonian Ruby Users Group"
