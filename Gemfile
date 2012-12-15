@@ -1,22 +1,20 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.2.8'
+gem 'rails', '3.2.9'
 gem 'mysql2'
 gem 'haml'
 gem 'haml-rails'
-gem 'hpricot', '>=0.6'
-gem 'RedCloth', '>=4.2.3', :require => 'redcloth'
 gem 'will_paginate'
 gem 'bcrypt-ruby', :require => 'bcrypt'
 gem 'inherited_resources'
 gem 'jquery-rails', '=1.0.19'
 
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
-  gem 'uglifier', '>= 1.0.3'
+  gem 'sass-rails'
+  gem 'coffee-rails'
+  gem 'uglifier'
   gem 'compass-rails'
-  gem 'compass-h5bp', '=0.0.5'
+  gem 'compass-h5bp'
 end
 
 group :development do
@@ -24,9 +22,8 @@ group :development do
 end
 
 group :development, :test do
-  gem 'rspec-rails', '>= 2.8.0'
+  gem 'rspec-rails'
   gem 'web-app-theme', '>= 0.6.2'
-  gem 'ruby_parser' # used by web-app-theme
   gem 'quiet_assets'
 end
 
