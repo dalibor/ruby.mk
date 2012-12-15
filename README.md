@@ -2,18 +2,17 @@
 
 # ruby.mk
 
-* http://github.com/dalibor/ruby.mk
+* http://github.com/mkrug/ruby.mk
 
 ## DESCRIPTION:
 
-- Ruby on Rails 3 Team Blog application deployed at MKRUG website - http://ruby.mk
-- Started as a project copy of https://github.com/dalibor/blog at bca8ba15b7581a90f751
+Ruby on Rails blog application deployed at: [http://ruby.mk](http://ruby.mk)
 
 ## INSTALL:
 
 - Clone repository
 
-    git clone http://github.com/dalibor/ruby.mk
+    git clone http://github.com/mkrug/ruby.mk
     cd ruby.mk
 
 - Config database
@@ -57,12 +56,6 @@
 
 ## Run tests
 
-- Run cucumber features
-
-    cucumber features
-
-- Run RSpec specs
-
     rspec spec
 
 ## LICENSE:
@@ -89,4 +82,3 @@ IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
 CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-

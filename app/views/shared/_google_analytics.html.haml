@@ -1,6 +1,6 @@
 -# asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet
 :javascript
-  var _gaq = [['_setAccount', 'UA-22462908-1'], ['_trackPageview']];
+  var _gaq = [['_setAccount', '#{APP_CONFIG['google']['account_id']}'], ['_trackPageview']];
   (function(d, t) {
    var g = d.createElement(t),
        s = d.getElementsByTagName(t)[0];

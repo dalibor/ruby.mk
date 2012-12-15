@@ -12,7 +12,6 @@ def login_as_admin
   current_editor
 end
 
-
 def login(user)
   visit login_path
   fill_in "Email", with: user.email

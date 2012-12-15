@@ -1,7 +1,7 @@
 FactoryGirl.define do
   factory :editor do |f|
     f.name "Ping Panter"
-    f.sequence(:email) {|i| "pink.panter#{i}@gmail.com"}
+    f.sequence(:email) { |i| "pink.panter#{i}@gmail.com"}
     f.password "password"
     f.password_confirmation "password"
   end
