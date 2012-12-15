@@ -7,10 +7,21 @@ gem 'haml-rails'
 gem 'hpricot', '>=0.6'
 gem 'RedCloth', '>=4.2.3', :require => 'redcloth'
 gem 'will_paginate'
-gem 'compass-rails'
-gem 'html5-boilerplate'
 gem 'bcrypt-ruby', :require => 'bcrypt'
 gem 'inherited_resources'
+gem 'jquery-rails', '=1.0.19'
+
+group :assets do
+  gem 'sass-rails',   '~> 3.2.3'
+  gem 'coffee-rails', '~> 3.2.1'
+  gem 'uglifier', '>= 1.0.3'
+  gem 'compass-rails'
+  gem 'compass-h5bp', '=0.0.5'
+end
+
+group :development do
+  gem 'thin'
+end
 
 group :development, :test do
   gem 'rspec-rails', '>= 2.8.0'

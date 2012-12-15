@@ -24,11 +24,6 @@
     cp config/config.yml.template config/config.yml
     vim config/config.yml # edit config.yml file
 
-- Setup google analytics
-
-    cp config/google.yml.template config/google.yml
-    vi config/google.yml
-
 - Change the secret token for verifying the integrity of signed cookies
 
     First generate new secret token with: 'rake secret'
@@ -47,7 +42,7 @@
 
     vi db/seeds.rb
     rake db:seed
-  
+
 - Start the server
 
     ruby script/server

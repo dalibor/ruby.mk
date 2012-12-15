@@ -1,6 +1,28 @@
-@import compass/css3
-@import compass/utilities
-@import "compass/css3/transform"
+//--------------------------------
+// Minimal Base Styles
+//--------------------------------
+body, select, input, textarea
+  color: $font-color
+
+html
+  // +force-scrollbar
+
+a, a:active, a:visited
+  color: $link-color
+  text-decoration: none
+
+a:hover
+  color: $link-hover-color
+  text-decoration: underline
+
+ul, ol
+  margin-left: $list-left-margin
+
+ol
+  list-style-type: decimal
+
+td, td img
+  vertical-align: top
 
 //-----------------------------------------------
 // The following html5-boilerplate styles should
@@ -16,10 +38,7 @@ strong, th
   font-weight: bold
 
 small
-  // Use font-size mixin to convert to percentage for YUI
-  // http://developer.yahoo.com/yui/3/cssfonts/#fontsize
-  +font-size(11px)
-  // approx 85% when base-font-size eq 13px
+  font-size: 11px
 
 // Add the 'required' attribute on your
 // inputs if you want to use these
@@ -27,7 +46,7 @@ input:valid, textarea:valid
 
 input:invalid, textarea:invalid
   +border-radius(1px)
-  +box-shadow(red, 0, 0, 5px, 0)
+  +box-shadow(red 0 0 5px 0)
 
 .no-boxshadow input:invalid,
 .no-boxshadow textarea:invalid
@@ -80,6 +99,7 @@ blockquote
 
 body
   font-size: 13px
+  line-height: 1.4em
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
 
 /* GRID BEGIN */
@@ -168,7 +188,7 @@ section
   padding: 10px
   overflow: hidden
   +border-radius(10px)
-  +box-shadow(#999, 2px, 3px, 3px, -2px)
+  +box-shadow(#999 2px 3px 3px -2px)
 
   div
     overflow: hidden
@@ -252,10 +272,12 @@ article.post
   header
     background: $light-gray
     +border-radius(10px)
-    +box-shadow(#999, 1px, 2px, 3px)
+    +box-shadow(#999 1px 2px 3px)
     margin-bottom: 15px
     padding: 5px 15px
     overflow: hidden
+    height: 50px
+
 
     .gravatar
       float: left
@@ -264,6 +286,7 @@ article.post
       margin-left: 10px
       float: left
       width: 560px
+      line-height: 22px
 
       h2
         font-size: 24px
@@ -395,7 +418,7 @@ input, textarea
   border: 1px solid #CCC
   padding: 3px
   &:hover, &:focus, &:active
-    +box-shadow(#ccc, 0, 0, 5px)
+    +box-shadow(#ccc 0 0 5px)
     border: 1px solid #CCC
 
 input[type=submit]
@@ -405,10 +428,10 @@ input[type=submit]
   padding: 6px 12px
   text-transform: uppercase
   +border-radius(7px)
-  +box-shadow(#666, 1px, 3px)
+  +box-shadow(#666 1px 3px)
 
 input[type=submit]:hover, input[type=submit]:focus, input[type=submit]:active
-  +box-shadow(#666, 1px, 3px)
+  +box-shadow(#666 1px 3px)
 
 .submit
   margin-left: 100px
