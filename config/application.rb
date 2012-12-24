@@ -72,6 +72,7 @@ module Blog
     config.assets.version = '1.0'
 
     # config.assets.precompile << /(^[^_]|\/[^_])[^\/]*/
+    config.assets.precompile << ['admin.css', 'admin.js', 'modernizr.js']
   end
 end
 
