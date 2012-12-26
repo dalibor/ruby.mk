@@ -12,41 +12,79 @@ Ruby on Rails blog application deployed at: [http://ruby.mk](http://ruby.mk)
 
 - Clone repository
 
-    git clone http://github.com/mkrug/ruby.mk
-    cd ruby.mk
+```
+git clone http://github.com/mkrug/ruby.mk
+cd ruby.mk
+```
 
 - Config database
 
-    cp config/database.yml.template config/database.yml
-    vi config/database.yml
+```
+cp config/database.yml.template config/database.yml
+vi config/database.yml
+```
 
 - Config secret keys
 
-    cp config/config.yml.template config/config.yml
-    vim config/config.yml # edit config.yml file
+```
+cp config/config.yml.template config/config.yml
+vim config/config.yml # edit config.yml file
+```
 
 - Change the secret token for verifying the integrity of signed cookies
 
-    First generate new secret token with: 'rake secret'
-    Then add it to config/initializers/secret_token.rb
+```
+First generate new secret token with: 'rake secret'
+Then add it to config/initializers/secret_token.rb
+```
 
 - Install gems
 
-    bundle install
+```
+bundle install
+```
 
 - Setup database
 
-    rake db:create
-    rake db:migrate
+```
+rake db:create
+rake db:migrate
+```
 
 - Seed admin user
 
-    vi db/seeds.rb
-    rake db:seed
+```
+vi db/seeds.rb
+rake db:seed
+```
 
 - Start the server
 
-    ruby script/server
+```
+ruby script/server
+```
+
+- Run tests
+
+```
+rspec spec
+```
+
+
+## DEPLOY
+
+  - Setup production
+
+```
+gitploy production setup
+```
+
+  - Deploy to production
+
+```
+gitploy production
+```
+
 
 ## SEO
 
@@ -54,15 +92,12 @@ Ruby on Rails blog application deployed at: [http://ruby.mk](http://ruby.mk)
 
 - Add tags to the post which are used as keywords on the post page
 
-## Run tests
-
-    rspec spec
 
 ## LICENSE:
 
 (The MIT License)
 
-Copyright (c) 2009-2011 Dalibor Nasevic
+Copyright (c) 2009-2012 Dalibor Nasevic
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the

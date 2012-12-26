@@ -21,6 +21,7 @@ end
 
 group :development do
   gem 'thin'
+  gem 'gitploy'
 end
 
 group :development, :test do
