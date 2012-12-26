@@ -77,8 +77,11 @@ module Blog
 end
 
 ActionView::Base.field_error_proc = Proc.new do |html_tag, instance|
-  include ActionView::Helpers::RawOutputHelper
-  raw %(<span class="field_with_errors">#{html_tag}</span>)
+  if html_tag =~ /<label/
+    %|<div class="fieldWithErrors">#{html_tag} <span class="error">#{[instance.error_message].join(', ')}</span></div>|.html_safe
+  else
+    html_tag
+  end
 end
 
 APP_CONFIG = YAML.load_file("#{Rails.root}/config/config.yml")[Rails.env]
