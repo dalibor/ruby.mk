@@ -12,7 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require jquery.wymeditor.min
+//= require jquery.wymeditor
 
 
 $(function () {
@@ -20,6 +20,7 @@ $(function () {
     basePath: "/wymeditor/",
     iframeBasePath: "/wymeditor/iframe/default/",
     skinPath: "/wymeditor/skins/default/",
+    wymPath: "/assets/admin.js"
   });
 
   $('form').submit(function () {
