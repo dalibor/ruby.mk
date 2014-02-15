@@ -12,9 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require jquery.timeago
-//= require jquery.autolink
-//= require jquery.tweets
 //= require syntaxhighlighter
 //
 
@@ -23,8 +20,6 @@
   $(function () {
     SyntaxHighlighter.defaults['toolbar'] = false;
     SyntaxHighlighter.all();
-
-    $('#tweets_container').tweets({username: 'mk_rug', limit: 3});
   })
 })(this.jQuery);
 
