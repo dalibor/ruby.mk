@@ -5,8 +5,9 @@
 
 // Variables come first
 //-----------------------------------------
-@import "partials/variables"
-@import "partials/chromeframe"
+@import "globals/variables"
+@import "globals/mixins"
+@import "globals/chromeframe"
 
 
 // Boilerplate
@@ -27,7 +28,14 @@
 @import compass/utilities
 @import compass/css3
 
+// Import custom fonts
+//-----------------------------------------
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300)
 
-// Application custom styles
+// Application custom styles - components
+//-----------------------------------------
+@import components/header
+
+// Application custom styles - partials
 //-----------------------------------------
 @import partials/page

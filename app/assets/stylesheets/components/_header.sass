@@ -1,0 +1,37 @@
+.header
+  height: 140px
+  margin: 0 0 20px
+  background: url(image_path('header_bg.png'))
+
+  .wrapper
+    width: 900px
+    margin: 0 auto
+    overflow: hidden
+    padding: 15px
+
+  .logo
+    float: left
+    height: 110px
+    width: 226px
+
+    a
+      color: #FFF
+      text-decoration: none
+      display: block
+
+      .title
+        +oswald(70px, 400)
+        line-height: 80px
+
+      .info
+        border-top: 3px solid #FFF
+        font-size: 16px
+        line-height: 26px
+
+  nav
+    float: right
+    margin: 20px 0 0 0
+
+    ul
+      +horizontal-list(6px)
+
