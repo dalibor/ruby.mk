@@ -11,9 +11,9 @@ module ApplicationHelper
     content_for(:description) { page_description } unless page_description.blank?
   end
 
-  def gravatar_url(email)
+  def gravatar_url(email, size = 48)
     gravatar_id = Digest::MD5.hexdigest(email.downcase)
-    "http://gravatar.com/avatar/#{gravatar_id}.png?s=48"
+    "http://gravatar.com/avatar/#{gravatar_id}.png?s=#{size}"
   end
 
   def body_id

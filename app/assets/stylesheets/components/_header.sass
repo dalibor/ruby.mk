@@ -1,6 +1,6 @@
 .header
-  height: 140px
-  margin: 0 0 20px
+  height: 76px
+  margin: 0
   background: url(image_path('header_bg.png'))
 
   .wrapper
@@ -9,24 +9,12 @@
     overflow: hidden
     padding: 15px
 
-  .logo
-    float: left
-    height: 110px
-    width: 226px
-
-    a
-      color: #FFF
-      text-decoration: none
-      display: block
-
-      .title
-        +oswald(70px, 400)
-        line-height: 80px
-
-      .info
-        border-top: 3px solid #FFF
-        font-size: 16px
-        line-height: 26px
+  .logo a
+    color: #FFF
+    text-decoration: none
+    display: inline-block
+    +oswald(42px, 400)
+    line-height: 46px
 
   nav
     float: right

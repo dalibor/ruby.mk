@@ -1,12 +1,3 @@
 .wrapper
   .logo
-    %h1
-      = link_to root_path do
-        .title MKRUG
-        .info Macedonian Ruby Users Group
-
-  %nav
-    %ul
-      %li= link_to image_tag('feed-icon-14x14.png'), posts_path(:format => 'rss')
-      %li= link_to "Home", root_path
-      %li= link_to "Blog", posts_path
+    %h1= link_to "Ruby Macedonia", root_path
