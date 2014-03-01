@@ -1,0 +1,100 @@
+.hidden
+  display: none
+
+.arrow-left
+  width: 0
+  height: 0
+  border-bottom: 40px solid $primary
+  border-left: 50px solid transparent
+  display: inline-block
+  position: absolute
+  left: -50px
+  top: 0
+
+.arrow-right
+  width: 0
+  height: 0
+  border-top: 40px solid $primary
+  border-right: 50px solid transparent
+  display: inline-block
+  position: absolute
+  right: -50px
+  top: 0
+
+label
+  font-weight: bold
+  margin-bottom: 3px
+  float: left
+  display: inline-block
+  width: 100px
+
+span.field_notice
+  display: block
+  padding-left: 100px
+  color: #666
+  font-size: 10px
+
+.fieldWithErrors
+  padding: 2px
+  background-color: red
+  display: table
+
+form
+  div
+    margin: 5px 0 10px
+  span.field_with_errors
+    input, textarea
+      border: 1px solid red
+
+input, textarea
+  +border-radius(3px)
+  border: 1px solid #CCC
+  padding: 3px
+  &:hover, &:focus, &:active
+    +box-shadow(#ccc 0 0 5px)
+    border: 1px solid #CCC
+
+input[type=submit]
+  cursor: pointer
+  font-size: 12px
+  font-weight: bold
+  padding: 6px 12px
+  text-transform: uppercase
+  +border-radius(7px)
+  +box-shadow(#666 1px 3px)
+
+input[type=submit]:hover, input[type=submit]:focus, input[type=submit]:active
+  +box-shadow(#666 1px 3px)
+
+.submit
+  margin-left: 100px
+
+.syntaxhighlighter
+  padding: 10px 0
+
+#error_explanation
+  margin: 20px
+
+  p
+    margin: 0 10px 0
+
+.notice, .error
+  padding: 2px 10px
+  margin: 10px 0
+  color: #FFF
+  p
+    margin: 0
+
+.notice
+  background-color: #0c3
+  border: 3px solid green
+
+.error, .recaptcha_error
+  background-color: #c00
+  border: 3px solid red
+
+#recaptcha_widget_div
+  margin-left: 100px
+
+.recaptcha_error
+  display: none

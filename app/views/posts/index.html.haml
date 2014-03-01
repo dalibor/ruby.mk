@@ -10,7 +10,7 @@
     %strong= @tag.name
 
 .posts
-  = render :partial => 'post', :collection => @posts
+  = render :partial => 'post', :collection => @posts, :locals => {:comments => false}
 
   .pagination
     = will_paginate @posts

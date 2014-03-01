@@ -1,20 +1,22 @@
 - title "Ruby Macedonia"
+%section.about
+  %p
+    Welcome to Ruby Macedonia (a.k.a. MKRUG) – a community of Ruby developers in Macedonia. We meet up at least once a month, usually every last Thursday in the month with a technical presentation and occasional meetups in pub.
+    %br
+    For upcoming happenings, follow our website and calendar of events. For discussions #{link_to 'join our mailing list', 'http://groups.google.com/group/mk-ruby-users-group/', :target => '_blank'}, and follow us on twitter #{link_to "@mk_rug", "http://twitter.com/mk_rug", :target => "_blank"}.
+
 
 .section.left
-  %section.about
-    %p
-      Welcome to Ruby Macedonia (a.k.a. MKRUG) – a community of Ruby developers in Macedonia. We meet up at least once a month, usually every last Thursday in the month with a technical presentation and occasional meetups in pub. For upcoming happenings, follow our website and calendar of events. For discussions #{link_to 'join our mailing list', 'http://groups.google.com/group/mk-ruby-users-group/', :target => '_blank'}, and follow us on twitter #{link_to "@mk_rug", "http://twitter.com/mk_rug", :target => "_blank"}.
-
   %section.posts-excerpt
     %header.hidden
       %h2 Recent posts
       = link_to "View all", posts_path
 
     - @posts.each do |post|
-      %article.post-excerpt
+      %article.post
         %header.main-title
-          .name= post.editor.name
-          .avatar=image_tag gravatar_url(post.editor.email, 80)
+          .name= link_to post.editor.name, editor_posts_path(post.editor.id)
+          .avatar= link_to image_tag(gravatar_url(post.editor.email, 80)), editor_posts_path(post.editor.id)
           .arrow-right
 
         %h3.post-title= link_to post.title, post
@@ -28,8 +30,16 @@
           = link_to "read more", post
 
 
-.section.right
-  %section.calendar
+.aside.right
+  = render 'shared/archive'
+
+  %aside.calendar
+    %header.aside-title
+      .arrow-left
+      %h3 MKRUG Calendar
+
     #calendar
-      <iframe src="https://www.google.com/calendar/embed?title=MKRUG%20Calendar&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=350&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=jkq6sf0mfdq7jjb2cb9852o5ao%40group.calendar.google.com&amp;color=%232952A3&amp;ctz=Europe%2FBelgrade" style=" border-width:0 " width="340" height="350" frameborder="0" scrolling="no"></iframe>
+      <iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=350&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=jkq6sf0mfdq7jjb2cb9852o5ao%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=America%2FLos_Angeles" style=" border-width:0 " width="250" height="350" frameborder="0" scrolling="no"></iframe>
+
+      -# <iframe src="https://www.google.com/calendar/embed?title=MKRUG%20Calendar&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=350&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=jkq6sf0mfdq7jjb2cb9852o5ao%40group.calendar.google.com&amp;color=%232952A3&amp;ctz=Europe%2FBelgrade" style=" border-width:0 " width="250" height="350" frameborder="0" scrolling="no"></iframe>
 

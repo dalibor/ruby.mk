@@ -3,11 +3,8 @@
 - description(@post.description)
 
 .wrapper
-  = render 'posts/post', :post => @post
+  = render 'posts/post', :post => @post, :comments => true
 
   .aside
     = render 'shared/archive'
     = render 'shared/editors'
-
-  .comments
-    = render 'shared/disqus'

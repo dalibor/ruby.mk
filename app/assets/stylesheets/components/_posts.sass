@@ -1,0 +1,102 @@
+.posts
+  width: 650px
+  float: left
+  margin-right: 20px
+  overflow: hidden
+
+.posts_filter
+  margin: 5px 0 20px
+  font-style: italic
+
+article.post
+  margin: 50px 0 30px
+
+  &.main
+    width: 600px
+    float: left
+    margin-bottom: 35px
+
+    ul
+      li
+        list-style: disc outside none
+        padding-bottom: 5px
+
+    section
+      border-bottom: 1px solid #CCC
+      padding: 10px 5px
+
+  header.main-title
+    background: $primary
+    margin-right: 50px
+    height: 40px
+    position: relative
+
+  h3.post-title
+    margin: 20px 0 15px
+
+    a
+      +oswald(18px, 400)
+      text-transform: uppercase
+      text-decoration: none
+      line-height: 22px
+      color: #444
+
+  .name
+    padding-left: 12px
+    display: inline-block
+    margin-left: 100px
+
+    a
+      color: #FFF
+      +oswald(18px, 300)
+      line-height: 40px
+      color: #FFF
+      text-decoration: none
+      text-transform: uppercase
+
+  .avatar
+    position: absolute
+    top: -33px
+    left: 20px
+    width: 60px
+    height: 60px
+    border: 6px solid $primary
+    +border-radius(50px)
+    overflow: hidden
+    background: #000
+
+    a
+      display: block
+      width: 60px
+      height: 60px
+
+    img
+      position: relative
+      top: -1px
+      width: 62px
+      height: 62px
+      +border-radius(40px)
+
+  footer.info
+    margin-top: 10px
+    overflow: hidden
+    border-top: 1px solid #EEE
+    padding-top: 10px
+
+    time
+      float: left
+      +oswald(12px, 400)
+      padding-top: 5px
+      text-transform: uppercase
+
+    a
+      float: right
+      display: inline-block
+      padding: 5px
+      background: $primary
+      +oswald(12px, 300)
+      color: #FFF
+      text-transform: uppercase
+      text-decoration: none
+      margin: 0 2px
+

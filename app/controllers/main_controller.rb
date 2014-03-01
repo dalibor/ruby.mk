@@ -1,7 +1,8 @@
 class MainController < ApplicationController
 
   def index
-    @posts = Post.published.order('created_at DESC').limit(5)
+    @posts = Post.published.order('created_at DESC').limit(3)
+    @posts_by_month = Post.posts_by_month
   end
 
   def show
