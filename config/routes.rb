@@ -1,7 +1,7 @@
 Blog::Application.routes.draw do
   get '/login', :to => 'sessions#new', :as => 'login'
   get '/logout', :to => 'sessions#destroy', :as => 'logout'
-  get '/tag/:tag' => 'posts#index', :as => :tag_posts, :constraints => { :tag => /.*/ }
+  get '/tag/:tag' => 'posts#index', :as => :tag_posts, :constraints => { :tag => /[0-z\.]+/ }
   get '/editor/:editor' => 'posts#index', :as => :editor_posts
   get '/date/:year/:month' => 'posts#index', :as => :date_posts
   get '/sitemap.:format' => 'main#sitemap', :as => :sitemap
@@ -23,6 +23,4 @@ Blog::Application.routes.draw do
     resources :editors
     resource :profile, :only => [:edit, :update]
   end
-
-  match '/:id' => 'main#show', :as => :static
 end
