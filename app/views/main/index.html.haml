@@ -23,13 +23,15 @@
 
         %h3.post-title= link_to post.title, post
         %p
-          = post.description
+          = simple_format truncate html_to_plain_text(post.content), length: 350
 
         %footer.info
           %time
             = post.published_at.to_s(:long)
           = link_to "read more", post
 
+
+  = link_to "View all blog posts →", posts_path
 
 .aside.right
   = render 'shared/calendar'
