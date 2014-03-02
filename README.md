@@ -2,69 +2,63 @@
 
 # ruby.mk
 
-* http://github.com/mkrug/ruby.mk
+* https://github.com/mkrug/ruby.mk
+
 
 ## DESCRIPTION:
 
 Ruby on Rails blog application deployed at: [http://ruby.mk](http://ruby.mk)
+
 
 ## INSTALL:
 
 - Clone repository
 
 ```
-git clone http://github.com/mkrug/ruby.mk
+git clone https://github.com/mkrug/ruby.mk
 cd ruby.mk
 ```
 
-- Config database
+Config database
 
 ```
 cp config/database.yml.template config/database.yml
 vi config/database.yml
 ```
 
-- Config secret keys
+Configure application
 
 ```
 cp config/config.yml.template config/config.yml
-vim config/config.yml # edit config.yml file
 ```
 
-- Change the secret token for verifying the integrity of signed cookies
-
-```
-First generate new secret token with: 'rake secret'
-Then add it to config/initializers/secret_token.rb
-```
-
-- Install gems
+Install gems
 
 ```
 bundle install
 ```
 
-- Setup database
+Setup database
 
 ```
 rake db:create
 rake db:migrate
 ```
 
-- Seed admin user
+Seed admin user
 
 ```
 vi db/seeds.rb
 rake db:seed
 ```
 
-- Start the server
+Start the server
 
 ```
 ruby script/server
 ```
 
-- Run tests
+Run specs
 
 ```
 rspec spec
@@ -73,31 +67,28 @@ rspec spec
 
 ## DEPLOY
 
-  - Setup production
+ Setup production
 
 ```
 gitploy production setup
 ```
 
-  - Deploy to production
+Deploy to production
 
 ```
 gitploy production
 ```
 
 
-## SEO
+## CONTRIBUTORS
 
-- When creating post fill description area for description meta tag of your show post page
+See [contributors graph](https://github.com/mkrug/ruby.mk/graphs/contributors).
 
-- Add tags to the post which are used as keywords on the post page
 
 
 ## LICENSE:
 
 (The MIT License)
-
-Copyright (c) 2009-2012 Dalibor Nasevic
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
