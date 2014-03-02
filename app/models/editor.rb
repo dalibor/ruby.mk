@@ -25,6 +25,11 @@ class Editor < ActiveRecord::Base
     end
   end
 
+  def self.all_with_posts_count
+    select("editors.*, (SELECT COUNT(*) FROM posts WHERE posts.editor_id = editors.id) AS posts_count").
+      order('posts_count DESC').to_a
+  end
+
   def display_name
     name || email
   end

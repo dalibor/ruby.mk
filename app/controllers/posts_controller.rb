@@ -1,11 +1,9 @@
 class PostsController < ApplicationController
 
   def index
-    @posts          = scope.order('published_at DESC').includes([:tags, :editor]).
-                            where('published_at IS NOT NULL').
-                            paginate :page => params[:page], :per_page => 5
-    @posts_by_month = Post.posts_by_month
-    @editors        = Editor.all
+    @posts = scope.order('published_at DESC').includes([:tags, :editor]).
+               where('published_at IS NOT NULL').
+               paginate :page => params[:page], :per_page => 5
 
     respond_to do |format|
       format.html
@@ -14,9 +12,7 @@ class PostsController < ApplicationController
   end
 
   def show
-    @post           = Post.where('published_at IS NOT NULL').find(params[:id])
-    @posts_by_month = Post.posts_by_month
-    @editors        = Editor.all
+    @post = Post.where('published_at IS NOT NULL').find(params[:id])
   end
 
   private
@@ -26,6 +22,7 @@ class PostsController < ApplicationController
       elsif params[:editor].present? && (@editor = Editor.find(params[:editor]))
         @editor.posts
       elsif params[:year].present? && params[:month].present?
+        @month = "#{Date::MONTHNAMES[params[:month].to_i]} #{params[:year]}"
         Post.where("YEAR(published_at) = ? AND MONTH(published_at) = ?",
                    params[:year], params[:month])
       else

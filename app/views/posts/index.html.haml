@@ -1,13 +1,11 @@
 - title("Recent blog posts")
 
 - if @editor.present?
-  .posts_filter
-    Displaying posts from
-    %strong= @editor.name
+  .posts_filter== Displaying posts from <strong>#{@editor.name}</strong>
 - elsif @tag.present?
-  .posts_filter
-    Displaying posts with tag
-    %strong= @tag.name
+  .posts_filter== Displaying posts with tag <strong>#{@tag.name}</strong>
+- elsif @month.present?
+  .posts_filter== Displaying posts for month <strong>#{@month}</strong>
 
 .posts
   = render :partial => 'post', :collection => @posts, :locals => {:comments => false}
