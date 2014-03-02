@@ -6,6 +6,10 @@ body
 
   a
     color: $primary
+    +transition(opacity 0.2s ease)
+
+    &:hover
+      +opacity(0.8)
 
   p
     line-height: 1.5em
@@ -15,7 +19,7 @@ body
 
   .left
     float: left
-    width: 520px
+    width: 580px
 
   .right
     float: right
@@ -27,9 +31,7 @@ body
     overflow: hidden
 
   section.about
-    padding: 30px
     margin-bottom: 20px
-    border: 1px solid #EEE
     p
       margin: 0
 
@@ -73,9 +75,9 @@ body
       +horizontal-list(6px)
 
 .aside
-  width: 200px
   float: right
   margin: 50px 0
+  width: 250px
 
   aside
 
@@ -87,19 +89,16 @@ body
       position: relative
 
     h3
+      color: $primary
       margin-bottom: 10px
       height: 40px
-      padding: 0 5px
-      background: $primary
-      padding-left: 12px
-      +oswald(18px, 300)
+      // background: $primary
+      // padding-left: 12px
+      +oswald(24px, bold)
       line-height: 40px
-      color: #FFF
 
 
   ul
-    padding-left: 10px
-
     li
       margin: 4px 0
 
@@ -107,11 +106,6 @@ body
     margin-top: 20px
 
   .calendar
-    width: 200px
-    margin: 20px 0
-    position: relative
+    margin-bottom: 30px
 
     #calendar
-      position: absolute
-      top: 50px
-      left: -50px

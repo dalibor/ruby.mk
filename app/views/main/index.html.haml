@@ -1,10 +1,12 @@
 - title "Ruby Macedonia"
+
 %section.about
   %p
-    Welcome to Ruby Macedonia (a.k.a. MKRUG) – a community of Ruby developers in Macedonia. We meet up at least once a month, usually every last Thursday in the month with a technical presentation and occasional meetups in pub.
+    Welcome to Ruby Macedonia (a.k.a. MKRUG) – a community for anyone interested in Ruby programming language.
     %br
-    For upcoming happenings, follow our website and calendar of events. For discussions #{link_to 'join our mailing list', 'http://groups.google.com/group/mk-ruby-users-group/', :target => '_blank'}, and follow us on twitter #{link_to "@mk_rug", "http://twitter.com/mk_rug", :target => "_blank"}.
-
+    We meet up once a month, usually last Thursday in the month with tech presentation and occasional meetups in pub.
+    %br
+    Join our #{link_to 'mailing list', 'http://groups.google.com/group/mk-ruby-users-group/', :target => '_blank'} for discussions or tweet us #{link_to "@mk_rug", "http://twitter.com/mk_rug", :target => "_blank"} to suggest a presentation or provide feedback.
 
 .section.left
   %section.posts-excerpt
@@ -25,21 +27,11 @@
 
         %footer.info
           %time
-            = time_ago_in_words post.published_at
-            ago
+            = post.published_at.to_s(:long)
           = link_to "read more", post
 
 
 .aside.right
+  = render 'shared/calendar'
   = render 'shared/archive'
-
-  %aside.calendar
-    %header.aside-title
-      .arrow-left
-      %h3 MKRUG Calendar
-
-    #calendar
-      <iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=350&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=jkq6sf0mfdq7jjb2cb9852o5ao%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=America%2FLos_Angeles" style=" border-width:0 " width="250" height="350" frameborder="0" scrolling="no"></iframe>
-
-      -# <iframe src="https://www.google.com/calendar/embed?title=MKRUG%20Calendar&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=350&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=jkq6sf0mfdq7jjb2cb9852o5ao%40group.calendar.google.com&amp;color=%232952A3&amp;ctz=Europe%2FBelgrade" style=" border-width:0 " width="250" height="350" frameborder="0" scrolling="no"></iframe>
 

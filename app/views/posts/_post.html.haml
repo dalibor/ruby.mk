@@ -9,9 +9,8 @@
 
   %footer.info
     %time{:datetime => post.published_at}
-      = time_ago_in_words post.published_at
-      ago
-    %span.tags= raw post.tags.map{|tag| link_to(tag.name, tag_posts_path(tag), :rel => 'tag')}.join(' ')
+      = post.published_at.to_s(:long)
+    %span.tags= raw post.tags.map{|tag| link_to(tag.name, tag_posts_path(tag.name), :rel => 'tag')}.join(' ')
 
   - if comments
     .comments
