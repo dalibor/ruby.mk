@@ -3,13 +3,8 @@ require 'gitploy/script'
 configure do |c|
   c.path = '/home/deployer/www/ruby.mk'
 
-  # stage :staging do
-  #   c.host = 'staging.ruby.mk'
-  #   c.user = 'deployer'
-  # end
-
   stage :production do
-    c.host = 'ruby.mk'
+    c.host = '107.170.47.48'
     c.user = 'deployer'
   end
 end
